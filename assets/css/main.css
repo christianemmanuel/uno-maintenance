@@ -1,0 +1,95 @@
+html, body {
+  height: 100vh; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  background-color: #ffffff;
+  color: #F39122;
+  position: relative;
+  z-index: 1;
+  overflow-x: hidden; }
+
+p:last-child {
+  margin-bottom: 0; }
+
+*, ::after, ::before {
+  box-sizing: border-box; }
+
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.23em; }
+
+p {
+  color: #585858; }
+
+.uno-maintenance-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin: auto;
+  padding: 1.8rem 0; }
+  .uno-maintenance-page .uno-model {
+    margin-top: 3.5rem; }
+  .uno-maintenance-page p {
+    margin-top: 1.2rem; }
+
+img {
+  max-width: 100%; }
+
+.flex-center {
+  height: 100%;
+  display: flex;
+  position: relative; }
+  .flex-center:before, .flex-center:after {
+    display: block;
+    bottom: 13%;
+    height: 160px;
+    z-index: -1;
+    position: absolute;
+    content: '';
+    background-repeat: no-repeat; }
+  .flex-center:before {
+    left: 0;
+    background-image: url(../images/left-fish.svg);
+    width: 300px;
+    background-position: right; }
+  .flex-center:after {
+    right: 0;
+    background-image: url(../images/right-fish.svg);
+    width: 250px;
+    background-position: left; }
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center; }
+
+@media only screen and (max-width: 620px) {
+  .uno-model img {
+    max-width: 20rem; }
+
+  h1 {
+    font-size: 1.7rem; }
+
+  .main-logo {
+    max-width: 200px; }
+
+  .flex-center:before, .flex-center:after {
+    display: none; } }
+@media only screen and (max-width: 420px) {
+  .uno-model img {
+    max-width: 17rem; }
+
+  h1 {
+    font-size: 1.2rem; }
+
+  .main-logo {
+    max-width: 200px; } }
+
+/*# sourceMappingURL=main.css.map */
